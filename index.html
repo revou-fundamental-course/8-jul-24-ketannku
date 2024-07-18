@@ -4,55 +4,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalkulator BMI - Nathanael K.N </title>
+    <title>Kalkulator BMI - Nathanael K.N</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <!-- JUdul -->
+    <header class="main-title">
+        <marquee>
+        <h1>Kalkulator BMI by Nathanael Kevin</h1>
+        </marquee>
+    </header>
 
-<header> 
-    <a href="index.html" class="logo"><h1>Kalkulator BMI by Nathanael Kevin</h1>
-    <ul>
-      <li><a href="#Home">Home</a></li>
-      <li><a href="#planet">Planet</a></li>
-      <li><a href="#about">About </a></li>
-      <li><a href="#contact">Contact me</a></li>
-    </ul>
-</header>
-<main>
-    <article></article>
-    <section>
-        <form>
-            <div>
-            <input type="radio" id="pilih-man"><label> Laki - laki </label>
-            <input type="radio" id="pilih-woman"><label> Perempuan </label>
-            </div>
-            <div>
-            <label for="input-bb">Berat Badan (Kg) </label>
-            <input type="number" id="input-bb">
-            </div>
-            <div>
-            <label for="input-usia">Usia (th) </label>
-            <input type="number" id="input-usia">
-            </div>
-            <div>
-            <label for="input-tb">Tinggi Badan (cm) </label>
-            <input type="number" id="input-tb">
-            </div>
-            <div>
-            <button> Submit </button>
-            <button> Reset </button>
-            </div>
-        </form>
-    </section>
-    <article></article>
-    <section></section>
-    <article></article>
-    <section></section>
-</main>
-<footer></footer>
+    <main>
+        <!-- konten kiri -->
+        <section class="main-content">
+            <!-- Artikel 1 -->
+            <section class="artikel">
+                <h2> Kalkulator BMI </h2>
+                <article>Berat badan ideal adalah impian semua orang.Tidak hanya Memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaiman denganmu? Yuk,hitung sekarang di kalkulator BMI.</article>
+            </section>
+            <!-- form pengisian -->
+            <section class="main-section">
+                <form id="bmi-form">
+                    <div class="gender">
+                        <div class="input-title">Jenis Kelamin</div>
+                        <input type="radio" id="pilih-man" name="jenis-kelamin" value="Laki-laki"><label for="pilih-man"> Laki - laki </label>
+                        <input type="radio" id="pilih-woman" name="jenis-kelamin" value="Perempuan"><label for="pilih-woman"> Perempuan </label>
+                    </div>
+                    <div>
+                        <label for="input-bb">Berat Badan (Kg)</label>
+                        <input type="number" id="input-bb" name="berat-badan">
+                    </div>
+                    <div>
+                        <label for="input-usia">Usia (th)</label>
+                        <input type="number" id="input-usia" name="usia">
+                    </div>
+                    <div>
+                        <label for="input-tb">Tinggi Badan (cm)</label>
+                        <input type="number" id="input-tb" name="tinggi-badan">
+                    </div>
+                    <div>
+                        <button type="submit" class="button submit">Hitung BMI</button>
+                        <button type="reset" class="button reset">Reset</button>
+                    </div>
+                </form>
+            </section>
 
-<script src="js/script.js"></script>
+            <!-- artikel 2 keuntungan  -->
+            <section class="artikel">
+                <header>
+                    <h2>Keunggulan Fitur</h2>
+                </header>
+                <article>
+                    <p>
+                        1. Menghitung berat badan
+                        <br>2. Menentukan kategori berat badan ideal atau tidak
+                        <br>3. Mempersiapkan program penurunan berat badan
+                    </p>
+                    <p>
+                        Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh
+                        mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya
+                        selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.
+                    </p>
+                    <p>
+                        Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilainya
+                        umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi
+                        dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M^2.
+                    </p>
+                </article>
+            </section>
+        </section>
+
+        <!-- Konten Kanan -->
+        <section class="main-content">
+            <!-- Hasil artikel -->
+            <article>
+                <h2>Hasil</h2>
+            </article>
+            <!-- Hasil Output -->
+            <section class="main-section result-section">
+                <p>Hasil BMI:</p>
+                <h2 id="result-bmi">Tidak ada data</h2>
+                <p id="result-description"></p>
+            </section>
+
+            <!-- Informasi setelah hasil -->
+            <section>
+                <p id="hasilnyaini"></p>
+            <!-- artikel hasil -->
+            <article class="artikel">
+                <p id="artikel-bmi"></p>
+                <p>
+                    BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko 
+                    penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran 
+                    Anda terkait dengan berat badan Anda.
+                </p>
+            </article>
+            <!-- Informasi lainya -->
+            <section class="main-section">
+                <p> Penyakit yang dapat ditimbulkan : </p>
+                <p id="penyakit"></p>
+            </section>
+            <a href="https://www.instagram.com/kiwkiw.io/" target="_blank"><button class="button klik">Konsultasi Ahli Gizi Via Aplikasi</button></a>
+            <a href="https://www.instagram.com/kiwkiw.io/" target="_blank"><button class="button klik">Konsultasi Ahli Gizi Via Aplikasi</button></a>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>Follow me on Instagram: <a href="https://www.instagram.com/kiwkiw.io/" target="_blank">@kiwkiw.io</a></p>
+    </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
 

@@ -1,31 +1,86 @@
-header .logo {
-    position: relative;
-    max-width: 80px;
-    position: relative;
-    color: #fff;
-    font-size: 30px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 1px;
-  }
-  header ul {
-    position: relative;
-    display: flex;
-  }
-  header ul li {
-    list-style: none;
-  }
-  header ul li a {
-    display: inline-block;
-    color: #fff;
-    font-weight: 400;
-    margin-left: 40px;
-    text-decoration: none;
-  }
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    background-color: white;
+}
 
-form {
-    border: 1%;
-    display: block;
-    background-color: blue;
+.main-title {
+    text-align: left;
+    text-shadow: 2px 2px 4px #b0f0cc;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-content {
+    
+    flex: 1;
+    padding: 12px;
+    margin: 4px;
+    background-color: #DBE7C9;
+    border-radius: 12px;
+    box-shadow: 5px 5px 1px lightblue;
+}
+
+.artikel {
+    padding: 5px;
+    margin-left: 20px;
+}
+
+.main-section {
+    background-color: #789461;
+    border-radius: 3px;
+    padding: 22px;
+    margin: 10px;
+    color: #F8F8FF;
+}
+
+.gender {
+    margin-bottom: 10px;
+}
+
+.input-title {
+    font-size: 14;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input[type=number], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.button {
+    height: 32px;
+    border-radius: 8px;
+    margin-top: 7px;
+}
+
+.submit:hover {
+    background-color: #294B29;
+    color: #F8F8FF;
+    border: 1px solid white;
+}
+
+.reset:hover {
+    background-color: darkred;
+    color: wheat;
+    border: 1px solid red;
+}
+
+.result-section {
+    text-align: center;
+}
+
+.klik:hover {
+    background-color: #F9D689;
+    color: black;
+    border: 1px solid black;
 }
