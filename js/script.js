@@ -71,5 +71,8 @@ document.addEventListener('DOMContentLoaded', function() {
         resultBMI.textContent = 'Tidak ada data'; // Mengosongkan hasil BMI
         resultDesc.textContent = ''; // Mengosongkan deskripsi hasil
         resultDesc.style.fontWeight = 'normal'; // Mengembalikan style deskripsi ke normal
+        kethasil.textContent = '';
+        artikelbmi.textContent ='';
+        penyakitbmi.textContent ='';
     });
 });
